@@ -11,7 +11,6 @@ The system manages students across three departments:
 - **SE** (Software Engineering)
 - **EE** (Electrical Engineering)
 
-> The design allows easy addition of more departments.
 
 Data is stored persistently using **binary files**. Any changes made during execution are automatically saved. The program includes thorough input validation for:
 - GPA (0.0 – 4.0)
