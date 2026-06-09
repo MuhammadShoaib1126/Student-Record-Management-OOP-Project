@@ -1,10 +1,10 @@
 # 🎓 Student Record Management System
 
-A console-based **Student Record Management System** built in C++ as an OOP project. It allows managing student records with file persistence, user authentication, sorting, searching, GPA calculations, and report generation.
+A console-based **Student Record Management System** built in C++. This was developed as an OOP project to manage student records with full CRUD operations, file persistence, user authentication, sorting, searching, GPA calculations, and report generation.
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
 
 The system manages students across three departments:
 - **CS** (Computer Science)
@@ -13,15 +13,13 @@ The system manages students across three departments:
 
 > The design allows easy addition of more departments.
 
-All data is stored persistently using **binary files** for both users and students.  
-When the program runs:
-- Data is loaded from files
-- Changes are saved back automatically
-- Input validation is thorough (GPA, Age, ID ranges)
+Data is stored persistently using **binary files**. Any changes made during execution are automatically saved. The program includes thorough input validation for:
+- GPA (0.0 – 4.0)
+- Age (16 – 23)
+- Unique Student ID
 
-The console interface uses custom ANSI escape sequences for:
-- **Bold text**
-- *Italic text*
+The console interface uses ANSI escape sequences for:
+- **Bold** and *italic* text
 - Colored output
 
 ---
@@ -36,10 +34,10 @@ The console interface uses custom ANSI escape sequences for:
 - Delete student records
 
 ### Sorting (Ascending)
-- Sort by **ID**
-- Sort by **Name** (lexicographically)
-- Sort by **GPA** (lowest to highest)
-- Sort by **Age**
+- Sort by ID
+- Sort by Name (lexicographically)
+- Sort by GPA (lowest to highest)
+- Sort by Age
 
 ### Analytics & Reports
 - Average GPA (overall)
@@ -51,11 +49,11 @@ The console interface uses custom ANSI escape sequences for:
 ### File Persistence
 - Save/load student data to binary file
 - Auto-save on every change
-- User data stored in binary file
+- User credentials stored in binary file
 
 ### User Authentication
 - Create account / Login system
-- 3 failed attempts → program exit
+- 3 failed login attempts → program exits
 - Welcome screen with system info
 
 ---
@@ -83,19 +81,14 @@ The console interface uses custom ANSI escape sequences for:
 
 ---
 
-## 📦 Installation & Running
+## 📦 Compilation & Running
 
 ### Prerequisites
 - C++ compiler (g++ recommended)
-- Terminal / Command Prompt
 
 ### Steps
 
 ```bash
-# Clone the repository
-git clone https://github.com/MuhammadShoaib1126/student-record-management-system.git
-cd student-record-management-system
-
 # Compile
 g++ main.cpp -o student_system
 
